@@ -6,7 +6,7 @@ data1, data2, data3, data4 = "", "", "", ""
 sql=""
 
 # 메인 코드
-conn = pymysql.connect( )
+conn = pymysql.connect(host='127.0.0.1', user='root', password='choi8039', db='memberDB', charset='utf8')
 cur = conn.cursor()
 
 while (True) :

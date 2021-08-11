@@ -6,10 +6,10 @@ data1, data2, data3, data4 = "", "", "", ""
 row=None
 
 # 메인 코드
-conn = pymysql.connect( )
+conn = pymysql.connect(host='127.0.0.1', user='root', password='choi8039', db='memberDB', charset='utf8')  #--- memberDB작성 
 cur = conn.cursor()
 
-cur.execute("SELECT * FROM userTable")
+cur.execute("SELECT * FROM usertable")
 
 print("사용자ID    사용자이름     e메일    출생연도")
 print("----------------------------------------------------")
